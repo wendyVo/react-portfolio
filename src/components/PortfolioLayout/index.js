@@ -6,7 +6,7 @@ function PortfolioLayout(props) {
     return (
         <div className="demo-big-content">
     <Layout>
-        <Header className="headerColor" title="Title" scroll>
+        <Header className="headerColor" title="My Portfolio" scroll>
             <Navigation>
                 <Link to="/home">Home</Link>
                 <Link to="/aboutme">About Me</Link>
