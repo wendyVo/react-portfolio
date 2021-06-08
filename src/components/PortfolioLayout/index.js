@@ -4,21 +4,21 @@ import {Link} from "react-router-dom";
 
 function PortfolioLayout(props) {
     return (
-        <div className="demo-big-content">
+        <div >
     <Layout>
         <Header className="headerColor" title="My Portfolio" scroll>
             <Navigation>
                 <Link to="/home">Home</Link>
                 <Link to="/aboutme">About Me</Link>
-                <Link to="/projects">Projects</Link>
+                <Link to="/project">Projects</Link>
                 <Link to="/contact">Contact</Link>
             </Navigation>
         </Header>
-        <Drawer title="Title">
+        <Drawer title="My Portfolio">
             <Navigation>
                 <Link to="/home">Home</Link>
                 <Link to="/aboutme">About Me</Link>
-                <Link to="/projects">Projects</Link>
+                <Link to="/project">Projects</Link>
                 <Link to="/contact">Contact</Link>
             </Navigation>
         </Drawer>
