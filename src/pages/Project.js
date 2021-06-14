@@ -2,11 +2,13 @@ import React, {useEffect, useState} from "react";
 import {Grid, Cell} from "react-mdl";
 import ProjectData from "../assets/data/ProjectData";
 import ProjectCard from "../components/ProjectCard";
+import PageLayout from "../components/PageLayout";
 
 function Project() {
     const [project, setProject] = useState(ProjectData);
 
     return (
+      <PageLayout>
       <Grid className="projectList"> 
             {project.map((item) => (
               <ProjectCard
@@ -16,10 +18,9 @@ function Project() {
                 img={item.img}
               />
              
-            ))}
-          
-         
-          </Grid>
+            ))}  
+      </Grid>
+      </PageLayout>
     )
 };
 
