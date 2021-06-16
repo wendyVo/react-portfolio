@@ -9,6 +9,9 @@ const ProjectData = [
         description: 
         "In this group project, we built a web application from scratch by integrating data received from multiple server-side API requests. Working as a team, we have learned agile development methodologies and implement feature and bug fixes using git branch worklflow and pull requests.",
         img: travelImg,
+        tech: "Fomantic UI, JQuery, JavaScript, GitHub, Web API: Flight Search: Amadeus API: https://developers.amadeus.com/, Currency Exchange: http://exchangeratesapi.io/",
+        gitHubLink: "https://github.com/phamthomas12/Project-1.git",
+        demoLink: "https://phamthomas12.github.io/Project-1/"
     },
     {
         id: uuidv4(),

@@ -16,6 +16,9 @@ function Project() {
                 title={item.title}
                 description={item.description}
                 img={item.img}
+                tech={item.tech}
+                gitHubLink={item.gitHubLink}
+                demoLink={item.demoLink}
               />
              
             ))}  

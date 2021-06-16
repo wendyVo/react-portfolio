@@ -34,20 +34,23 @@ const Contact = () => {
                 <div className="contact-body">
                     <Grid className="contact-grid">
                         <Cell col={6}>
-                            <h2>Wendy Uyen Vo</h2>
+                            {/* <h2>Wendy Uyen Vo</h2>
                             <img src={profile}
                                 alt="avatar"
                                 style={
                                     {height: '250px'}
-                                }/>
+                                }/> */}
+                                <a href="https://www.animatedimages.org/cat-sms-and-text-messages-630.htm"><img src="https://www.animatedimages.org/data/media/630/animated-sms-and-text-message-image-0033.gif" border="0" alt="animated-sms-and-text-message-image-0033" /></a>
                             <p style={
                                 {
-                                    width: '75%',
-                                    margin: 'auto',
-                                    paddingTop: '1em'
+                                    width: "75%",
+                                    margin: "auto",
+                                    paddingTop: "1em",
+                                    fontSize: "2em"
                                 }
-                            }>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries</p>
+                            }>Send Me a Message if you have any queries</p>
 
+                            
                         </Cell>
                         <Cell col={6}>
                             {/* <h2>Contact Me</h2>
