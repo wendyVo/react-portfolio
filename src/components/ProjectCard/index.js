@@ -1,6 +1,7 @@
 import React from "react";
-import {Card, CardText, CardTitle, CardActions, Button, CardMenu, IconButton, Dialog, DialogTitle, DialogActions, DialogContent} from "react-mdl";
+import {Card, CardText, CardTitle, CardActions, Button,Dialog, DialogTitle, DialogActions, DialogContent} from "react-mdl";
 import "./style.css";
+import {PoButtons, LinkButtons} from "../PoButtons";
 
     class ProjectCard extends React.Component {
         constructor(props) {
@@ -22,7 +23,6 @@ import "./style.css";
           }
         render() {
     return (
-        // <Cell col={4} phone={12}>
         <Card className="mdl-cell mdl-cell--4-col mdl-cell--12-col-tablet mdl-cell--12-col-phone portfolio-card" shadow={3} 
           >
             <div class="mdl-card__media" >
@@ -36,19 +36,13 @@ import "./style.css";
                 }} src={this.props.img} border="0" alt="" />
             </div>
             <CardTitle className="cardTitle" 
-            // style={
-            //     {
-            //         color: '#fff',
-            //         height: '176px',
-            //         background:    `url(${props.img}) center / cover`
-            //     }
             >{this.props.title}</CardTitle>
             <CardText>
                 {this.props.description}
             </CardText>
             <CardActions border>
             <div>
-        <Button colored onClick={this.handleOpenDialog} raised ripple>Explore More</Button>
+        <PoButtons onPress={this.handleOpenDialog} btnText="Explore More" />
         <Dialog open={this.state.openDialog}>
           <DialogTitle>{this.props.title}</DialogTitle>
           <DialogContent>
@@ -56,9 +50,9 @@ import "./style.css";
             <p>{this.props.tech}</p>
           </DialogContent>
           <DialogActions>
-            <Button type='button'><a href={this.props.demoLink} target="_blank">Live Demo</a></Button>
-            <Button type='button'><a href={this.props.gitHubLink} target="_blank">GitHub Link</a></Button>
-            <Button type='button' onClick={this.handleCloseDialog}>Close</Button>
+            <LinkButtons btnLink={this.props.demoLink} btnText="Live Demo" />
+            <LinkButtons btnLink={this.props.gitHubLink} btnText="GitHub Link"  />
+            <Button raised onClick={this.handleCloseDialog}>Close</Button>
           </DialogActions>
         </Dialog>
       </div>

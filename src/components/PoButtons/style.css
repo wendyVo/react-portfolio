@@ -1,0 +1,27 @@
+Button.btnBlue  {
+    background-color: #1a98b4;
+    color: white;
+    border-radius: 15px;
+    box-shadow: 0 5px #999;
+    margin-bottom: 1em;
+}
+
+.btnBlue:hover {
+    color: #1a98b4;
+    font-weight: bold;
+}
+
+.btnBlue:active {
+    color: white;
+    box-shadow: 0 2px #666;
+    transform: translateY(4px);
+}
+
+Button.btnBlue a {
+    text-decoration: none;
+    color: white;
+}
+Button.btnBlue a:hover {
+    color: #1a98b4;
+    font-weight: bold;
+}
