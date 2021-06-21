@@ -51,7 +51,7 @@ import {PoButtons, LinkButtons} from "../PoButtons";
           </DialogContent>
           <DialogActions>
             <LinkButtons btnLink={this.props.demoLink} btnText="Live Demo" />
-            <LinkButtons btnLink={this.props.gitHubLink} btnText="GitHub Link"  />
+            <LinkButtons btnLink={this.props.gitHubLink} btnText="GitHub Link" />
             <Button raised onClick={this.handleCloseDialog}>Close</Button>
           </DialogActions>
         </Dialog>

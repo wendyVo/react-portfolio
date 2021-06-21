@@ -5,6 +5,7 @@ import Home from "./pages/Home";
 import AboutMe from "./pages/AboutMe";
 import Project from "./pages/Project";
 import Contact from "./pages/Contact";
+import Footer from './components/Footer';
 
 function App() {
   return (
@@ -16,7 +17,7 @@ function App() {
             <Route path="/project" component={Project} />
             <Route path="/contact" component={Contact} />
         
-        {/* <Footer /> */}
+        <Footer />
         </PortfolioLayout>
     </Router>
   );

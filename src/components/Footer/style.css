@@ -1,0 +1,11 @@
+#footer-page {
+    padding: 1rem 0;
+    color: #999;
+    text-align: center;
+    background-color: black;
+    border-top: .05rem solid #e5e5e5;
+}
+
+#footer-page p:last-child {
+    margin-bottom: 0;
+}
